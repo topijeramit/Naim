@@ -209,16 +209,16 @@ ftp || tcp.port == 21
 1. On the attacker's terminal, connect to the TELNET service adn enter a command:
 
 ```bash
-telnet 192.168.43.137
+telnet 172.20.10.3
 ```
 - Username: `msfadmin`
 
 - Password: `msfadmin`
 
-![image](https://github.com/user-attachments/assets/ee1ddec3-43ac-4586-b5e0-e203927bb35e)
+![Screenshot 2025-04-18 205543](https://github.com/user-attachments/assets/66c24383-9ca1-4cbe-a0fc-4e450b3f59ca)
 
-![image](https://github.com/user-attachments/assets/f09e689c-a26d-41a7-a4d1-2ca258d93981)
-
+![Screenshot 2025-04-18 205621](https://github.com/user-attachments/assets/5534a8d8-0d58-43a9-88c2-31e14668de0b)
+---
 2. While typing the credentials, each keystroke is transmitted and captured in plaintext.
 
 3. In Wireshark, apply the filter:
@@ -226,21 +226,18 @@ telnet 192.168.43.137
 telnet || tcp.port == 23
 ```
 
-![image](https://github.com/user-attachments/assets/4725d2e9-1aff-4765-addd-7d79221f817e)
-
 - Look through the packet list for TELNET traffic.
 
 - Right-click → Follow → TCP Stream
 
-![image](https://github.com/user-attachments/assets/de8e502e-9986-47eb-9935-597530f40635)
+![Screenshot 2025-04-18 210038](https://github.com/user-attachments/assets/a5d73d43-83ea-435e-a469-3082a433364e)
 
-![image](https://github.com/user-attachments/assets/dae81cb3-3fed-455c-84bd-a114f212e7fe)
 
 ### 3.3 SSH Traffic
 
 1.  **Start an SSH session** from your terminal:
 
-    `ssh -oHostKeyAlgorithms=+ssh-rsa -oPubkeyAcceptedKeyTypes=+ssh-rsa msfadmin@192.168.43.137`
+    `ssh -oHostKeyAlgorithms=+ssh-rsa -oPubkeyAcceptedKeyTypes=+ssh-rsa msfadmin@172.20.10.3`
 
     -   **Username**: `msfadmin`
 
@@ -250,7 +247,8 @@ telnet || tcp.port == 23
     > `Unable to negotiate with 192.168.43.137 port 22: no matching host key type found. Their offer: ssh-rsa,ssh-dss`\
     > Use the command above to force use of `ssh-rsa` which is supported by Metasploitable2.
 
-![image](https://github.com/user-attachments/assets/f1ce378f-eaa1-4ae1-8f19-6d59ecbfce6d)
+![Screenshot 2025-04-18 210310](https://github.com/user-attachments/assets/459edc2e-6a2c-4ec9-a88c-5a75e4d9f727)
+
 
 2.  **Open Wireshark** on your attacker machine.
 
