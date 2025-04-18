@@ -258,7 +258,6 @@ telnet || tcp.port == 23
 ssh || tcp.port == 22
 ```
 
-![image](https://github.com/user-attachments/assets/c03738f3-09db-47ee-aa80-3f0a02aa85dd)
 
 4.  **In Wireshark**:
 
@@ -272,7 +271,8 @@ ssh || tcp.port == 22
 
     -   The stream will display **garbled** or **binary** data, confirming encryption.
 
-![image](https://github.com/user-attachments/assets/29cabe20-b802-4330-9ad2-4ac6c7438b86)
+![Screenshot 2025-04-18 212713](https://github.com/user-attachments/assets/6b30b55d-9c17-4580-976b-ff4602434186)
+
 
 ## C. Analyze Problems Encounter
 
