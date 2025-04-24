@@ -1,5 +1,5 @@
 
-# 💻 Cryptographic Weakness Analysis Lab
+# 💻 Cryptographic Weakness Analysis Lab (test)
 
 ## 🧠 A. Lab Objectives
 
