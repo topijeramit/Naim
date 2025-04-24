@@ -32,8 +32,9 @@ MySQL was enforcing SSL/TLS but Kali client was using mismatched protocol.
 Disabled SSL in the connection:
 
 ```bash
-mysql -h 192.168.0.13 --ssl-mode=DISABLED -u root -p
+mysql -h 172.20.10.3 -u root --ssl=off
 ```
+![Screenshot 2025-04-24 110851](https://github.com/user-attachments/assets/1c230439-4900-423b-aa18-343cd4829002)
 
 **Verification:**  
 Successfully accessed the database and listed databases using `SHOW DATABASES;`
