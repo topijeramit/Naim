@@ -20,7 +20,7 @@
 ```bash
 mysql -h 172.20.10.3 -u root -p
 ```
-![Screenshot 2025-04-24 110110](https://github.com/user-attachments/assets/87ca348e-0a6e-4d13-b99f-853d27b9ed54)
+![Screenshot 2025-04-24 110110](/Screenshot/mysql.png)
 ---
 
 - Encountered error: `ERROR 2026 (HY000): TLS/SSL error: wrong version number`
