@@ -1,5 +1,5 @@
 
-# 💻 Lab 2: Cryptographic Attacks: Cracking Weak Password Hashes and Exploiting Poor Authentication in Databases
+# 💻 Cryptographic Attacks: Cracking Weak Password Hashes and Exploiting Poor Authentication in Databases
 
 ## 🧠 A. Lab Objectives
 
