@@ -65,19 +65,19 @@ Next, I selected the `dvwa` database using the following command:
 ```sql
 USE dvwa;
 ```
-![alt text](<Screenshot 2025-04-24 192636.png>)
+![alt text](Screenshot/gambar2.png)
 ---
 I retrieved the list of tables using the following command:
 ```sql
 SHOW TABLES;
 ```
-![alt text](image.png)
+![alt text](Screenshot/image.png)
 ---
 I identified a `users` table and executed the following query:
 ```sql
 SELECT * FROM users;
 ```
-![alt text](<Screenshot 2025-04-24 195428.png>)
+![alt text](Screenshot/gambar3.png)
 ---
 ### ⚠️ Security Question
 
@@ -108,7 +108,7 @@ While you can access the database without a password, this exposes the system to
 #### ✅ Instructions:
 - Investigate the available databases and identify any tables containing password hashes.
 - Extract and list the hashes found.
-![alt text](<Screenshot 2025-04-24 195428-1.png>)
+![alt text](Screenshot/gambar4.png)
 
 #### ⚠️ Hint:
 > One of the databases contains user credentials stored as password hashes.
@@ -117,7 +117,7 @@ While you can access the database without a password, this exposes the system to
 ```
 #### 🛠️ Tools:
 - Use hash identification tools such as **hash-identifier** to determine the hashing algorithm used.
-![alt text](image-2.png)
+![alt text](Screenshot/image-1.png)
 
 #### 🔍 Task:
 - Extract the password hashes from the relevant table.
@@ -168,7 +168,7 @@ Begin by saving the password hashes retrieved from the database into a text file
 ```bash
 echo "0d107d09f5bbe40cade3de5c71e9e9b7" > hashes.txt
 ```
-![alt text](<Screenshot 2025-04-25 060152.png>)
+![alt text](Screenshot/image-2.png)
 ---
 ### 🔹 Step 2: Crack the Hash Using John the Ripper
 
@@ -177,7 +177,7 @@ Use **John the Ripper** along with a commonly used wordlist like `rockyou.txt` t
 ```bash
 john --wordlist=/usr/share/wordlists/rockyou.txt hashes.txt
 ```
-![alt text](image-3.png)
+![alt text](Screenshot/image-3.png)
 
 # Display All Cracked Passwords
 
@@ -186,7 +186,7 @@ To display all the cracked passwords, use the following command:
 ```bash
 john --show --format=raw-md5 hashes.txt
 ```
-![alt text](image-4.png)
+![alt text](Screenshot/image-4.png)
 ---
 
 ## Cracked Password Information
