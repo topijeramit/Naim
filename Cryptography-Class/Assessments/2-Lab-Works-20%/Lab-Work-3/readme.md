@@ -1,19 +1,28 @@
-# 🔐 Task 1: Symmetric Encryption and Decryption using AES-256-CBC
+# Task 1: Symmetric Encryption and Decryption using AES-256-CBC
 
-## 🧠 Scenario
-Labu wants to send a confidential message to Labi. We will use **AES-256-CBC** symmetric encryption with `OpenSSL` to encrypt and decrypt the message securely.
+## ✅ Objective
 
-> ⚠️ **Security Note**  
-> AES-256-CBC is vulnerable to certain attacks like padding oracle attacks.  
-> Use **AES-256-GCM** in real-world applications for authenticated encryption.
+To use OpenSSL to encrypt and decrypt a message using AES-256-CBC symmetric encryption.
 
 ---
 
-## ✅ Steps & Implementation
+## 🔧 Tools Used
 
-### 1️⃣ Generate a Strong Random Key
-> Generate a 256-bit (32 bytes) random key
-```
-openssl rand -hex 32 > key.hex
-```
+- `OpenSSL`
+- Linux Terminal (Kali or Ubuntu)
+- Text Editor (nano, vim, etc.)
+
 ---
+
+## 🧪 Scenario
+
+Naim wants to send a confidential message to Azris using symmetric encryption. We use AES-256-CBC to encrypt and decrypt the message.
+
+---
+
+## 🔐 Step-by-Step Process
+
+### 1. Create a Plaintext File
+
+```bash
+echo "This is a secret message from Naim to Azris." > naim.txt
