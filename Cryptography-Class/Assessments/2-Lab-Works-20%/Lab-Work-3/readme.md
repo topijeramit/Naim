@@ -26,3 +26,7 @@ Naim wants to send a confidential message to Azris using symmetric encryption. W
 
 ```bash
 echo "This is a secret message from Naim to Azris." > naim.txt
+```
+![alt text](<screenshot/Screenshot 2025-05-02 012127.png>)
+---
+![alt text](<screenshot/Screenshot 2025-05-02 012127.png>)
