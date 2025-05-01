@@ -2,7 +2,7 @@
 ## Topic: Hashing, Encryption, and Digital Signatures
 
 **Course:** [Your Course Code and Name]  
-**Name:** [Your Full Name]  
+**Name:** Your mom
 **Matric No:** [Your Matric Number]  
 **Date:** [Date of Completion]  
 **Instructor:** [Instructor's Name]
