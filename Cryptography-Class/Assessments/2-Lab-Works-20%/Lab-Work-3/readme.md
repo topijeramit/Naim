@@ -12,7 +12,7 @@ Labu wants to send a confidential message to Labi. We will use **AES-256-CBC** s
 ## ✅ Steps & Implementation
 
 ### 1️⃣ Generate a Strong Random Key
-# Generate a 256-bit (32 bytes) random key
+> Generate a 256-bit (32 bytes) random key
 ```
 openssl rand -hex 32 > key.hex
 ```
