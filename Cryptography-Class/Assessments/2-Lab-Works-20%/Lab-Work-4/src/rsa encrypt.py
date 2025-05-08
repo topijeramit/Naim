@@ -8,6 +8,20 @@ key = RSA.generate(2048)
 private_key = key.export_key()
 public_key = key.publickey().export_key()
 
+# Print first 3 lines of private key
+print("Private Key:")
+private_lines = private_key.decode().splitlines()
+for line in private_lines[:3]:
+    print(line)
+
+# Print first 3 lines of public key
+print("\nPublic Key:")
+public_lines = public_key.decode().splitlines()
+for line in public_lines[:3]:
+    print(line)
+
+print()
+
 # 2. Encrypt a message using the public key
 def encrypt_rsa(public_key, message):
     pub_key = RSA.import_key(public_key)
@@ -29,7 +43,7 @@ message = "RSA encryption is used for secure data transmission."
 # Encrypt the message
 encrypted_message = encrypt_rsa(public_key, message)
 print("Encrypted message:", encrypted_message)
-
+print()
 # Decrypt the message
 decrypted_message = decrypt_rsa(private_key, encrypted_message)
 print("Decrypted message:", decrypted_message)
