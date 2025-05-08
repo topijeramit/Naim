@@ -1,7 +1,7 @@
 from Crypto.Cipher import AES
 import base64
 
-# === Paste your base64 key and IV here ===
+
 base64_key = "LlXzWvV9rOGhvVsz8pRHGCUWa6qPDBp3Xc4ptQUa+6A="
 base64_iv  = "1msk7klMbtG6Ttifd8I9Iw=="                   
 
