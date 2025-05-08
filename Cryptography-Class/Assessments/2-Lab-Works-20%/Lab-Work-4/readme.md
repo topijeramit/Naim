@@ -109,16 +109,16 @@ In this task, we will generate an RSA key pair, encrypt a short message using th
 ### 1. **Generate an RSA Key Pair**
 
 - We will generate an RSA key pair (public and private keys) with a key size of 2048 bits.
-![alt text](<Screenshot 2025-05-08 145839.png>)
+![alt text](<screenshot/Screenshot 2025-05-08 145839.png>)
   
 ### 2. **Encrypt the Message using the Public Key**
 
 - The message will be encrypted with the **public key**.
-![alt text](<Screenshot 2025-05-08 145922.png>)
+![alt text](<screenshot/Screenshot 2025-05-08 145922.png>)
 ### 3. **Decrypt the Message using the Private Key**
 
 - The encrypted message will be decrypted with the **private key** to get back the original message.
-![alt text](<Screenshot 2025-05-08 145943.png>)
+![alt text](<screenshot/Screenshot 2025-05-08 145943.png>)
 
 ---
 
@@ -162,7 +162,7 @@ decrypted_message = decrypt_rsa(private_key, encrypted_message)
 print("Decrypted message:", decrypted_message)
 ```
 ###  output
-![alt text](<Screenshot 2025-05-08 150447.png>)
+![alt text](<screenshot/Screenshot 2025-05-08 150447.png>)
 ---
 
 ## Task 3: Hashing (SHA-256)
@@ -198,7 +198,7 @@ for msg in messages:
 ```
 
 ###  output
-![alt text](<Screenshot 2025-05-08 152546.png>)
+![alt text](<screenshot/Screenshot 2025-05-08 152546.png>)
 ---
 
 ## Task 4: Digital Signatures (RSA)
@@ -251,5 +251,5 @@ except Exception as e:
     print("Signature verification: FAILED ❌", str(e))
 ```
 ###  output
-![alt text](<Screenshot 2025-05-08 153307.png>)
+![alt text](<screenshot/Screenshot 2025-05-08 153307.png>)
 ---
