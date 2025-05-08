@@ -8,13 +8,13 @@ key = RSA.generate(2048)
 private_key = key.export_key()
 public_key = key.publickey().export_key()
 
-# Print first 3 lines of private key
+
 print("Private Key:")
 private_lines = private_key.decode().splitlines()
 for line in private_lines[:3]:
     print(line)
 
-# Print first 3 lines of public key
+
 print("\nPublic Key:")
 public_lines = public_key.decode().splitlines()
 for line in public_lines[:3]:
@@ -22,14 +22,14 @@ for line in public_lines[:3]:
 
 print()
 
-# 2. Encrypt a message using the public key
+
 def encrypt_rsa(public_key, message):
     pub_key = RSA.import_key(public_key)
     cipher = PKCS1_OAEP.new(pub_key)
     ciphertext = cipher.encrypt(message.encode())
     return base64.b64encode(ciphertext).decode()
 
-# 3. Decrypt the message using the private key
+
 def decrypt_rsa(private_key, ciphertext):
     priv_key = RSA.import_key(private_key)
     cipher = PKCS1_OAEP.new(priv_key)
