@@ -6,13 +6,13 @@
 ```bash
 sudo apt update && sudo apt install gnupg -y
 ```
-![alt text](<Screenshot 2025-05-16 181909.png>)
+![alt text](<Cryptography-Class/Assessments/1-Assignment-10%/practical test 1/screenshot/Screenshot 2025-05-16 181909.png>)
 ---
 ## 📌 Generate a GPG Key Pair
 ```
 gpg --full-generate-key
 ```
-![alt text](<Screenshot 2025-05-16 183249.png>)
+![alt text](<Cryptography-Class/Assessments/1-Assignment-10%/practical test 1/screenshot/Screenshot 2025-05-16 183249.png>)
 ---
 
 ## 📌 Verify Your Key
