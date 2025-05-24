@@ -24,3 +24,5 @@ You are provided with a **simulated ransomware binary** inside a compressed arch
 ![alt text](screenshot/die.png)
 ---
 ![alt text](screenshot/pyinst.png)
+
+![alt text](screenshot/extrated.png)
